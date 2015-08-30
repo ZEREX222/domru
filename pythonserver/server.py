@@ -65,7 +65,7 @@ def temp():
             "    WHERE"\
              "       (DATE(ss.start)= DATE(%s)"\
              "   OR DATE(ss. END)= DATE(%s)) "\
-             "   ORDER BY c.id) WHERE duration > 0"
+             "   ) a WHERE a.duration > 0 ORDER BY a.id"
 
     param = (date,date,date,date,date,date)
     cur.execute(query, param)
