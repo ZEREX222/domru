@@ -1,0 +1,183 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+#schedule {
+    background-color: rgba(246, 255, 234, 0.44);
+    overflow: hidden;
+    height: 100%;
+}
+
+#time {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(188, 192, 188, 0.100);
+}
+
+#channel {
+    width: 100%;
+    height: 70px;
+
+}
+
+.channelLogo {
+    width: 120px;
+    margin-top: 30px;
+    color:blue;
+    z-index: 999;
+    position: absolute;
+    background-color: #2e9799;
+    opacity: 0.7;
+
+}
+
+.program {
+    background-color: #fffcc8;
+    height: 68px;
+    position: absolute;
+    display: inline-block;
+    border: 1px solid #6d6a1a;
+    text-overflow:ellipsis;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;      /* IE */
+    overflow:hidden;
+}
+
+.programActive {
+    background-color:yellow;
+    height: 68px;
+    position: absolute;
+    display: inline-block;
+    border: 1px solid #6d6a1a;
+    text-overflow:ellipsis;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;      /* IE */
+    overflow:hidden;
+}
+
+#timeline {
+    border-left: 1px solid #ff0000;
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    z-index: 999;
+    top: 0px;
+    bottom: 0px;
+}
+
+#leftLink {
+    position: fixed;
+    display: inline-block;
+    bottom: 10px;
+    left: 30px;
+}
+
+#rightLink {
+    position: fixed;
+    display: inline-block;
+    bottom: 10px;
+    right: 30px;
+}
+
+#nowLink {
+    position: fixed;
+    display: inline-block;
+    left: 50%;
+    bottom: 10px;
+}
+
